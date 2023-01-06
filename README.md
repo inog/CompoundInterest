@@ -14,8 +14,8 @@ https://corporatefinanceinstitute.com/resources/wealth-management/compound-inter
 https://www.youtube.com/watch?v=OQ9Mv2jwQWo
 
 example.
-1000 * (1 + 0.05 / 10)^(1 * 1O) 
-1000 * (1+ 0.005)^10
-1000 * (1.005)^10
-1000 *  1.051140
-1051.140
+1000 * (1 + 0.05 / 1)^(1 * 1O) 
+1000 * (1+ 0.05)^10
+1000 * (1.05)^10
+1000 *  1.62889462678
+1628.89 
