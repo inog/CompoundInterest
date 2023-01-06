@@ -10,8 +10,11 @@ class CompoundInterestCalculator {
         val numYears = 10 // number of years
         val numCompoundingsPerYear = 1 // number of times compounded per year
         val amount = principal
-            .multiply(BigDecimal.ONE.add(rate.divide(BigDecimal(numCompoundingsPerYear), 6, RoundingMode.HALF_UP)))
-            .pow(numCompoundingsPerYear * numYears)
+            .multiply(
+                (BigDecimal.ONE.add(rate.divide(BigDecimal(numCompoundingsPerYear), 6, RoundingMode.HALF_UP)))
+                    .pow(numCompoundingsPerYear * numYears)
+            ).setScale(2,RoundingMode.HALF_UP)
+
         println("Compound interest: " + amount.subtract(principal))
         return amount
     }

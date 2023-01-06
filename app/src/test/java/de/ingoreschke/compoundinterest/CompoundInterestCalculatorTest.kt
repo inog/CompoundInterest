@@ -9,15 +9,15 @@ class CompoundInterestCalculatorTest {
 
     /**
      * 1000 * (1 + 0.05 / 10)^(1 * 1O)
-     * 1000 * (1+ 0.005)^10
-     * 1000 * (1.005)^10
-     * 1000 *  1.051140
-     * 1051.140
+     * 1000 * (1+ 0.05)^10
+     * 1000 * (1.05)^10
+     * 1000 * 1.62889462678
+     * 1628.89462678
      */
 
     @Test
     fun calc() {
         val result = cut.calc()
-        Assert.assertEquals(BigDecimal("1051.140"), result)
+        Assert.assertEquals(BigDecimal("1628.89"), result)
     }
 }
