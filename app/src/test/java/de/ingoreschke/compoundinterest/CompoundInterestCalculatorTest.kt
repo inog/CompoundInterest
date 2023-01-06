@@ -14,10 +14,11 @@ class CompoundInterestCalculatorTest {
      * 1000 * 1.62889462678
      * 1628.89462678
      */
-
     @Test
     fun calc() {
         val result = cut.calc()
         Assert.assertEquals(BigDecimal("1628.89"), result)
     }
+
+
 }
